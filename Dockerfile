@@ -1,5 +1,6 @@
 FROM alpine:3.5
 
+# specifying working directory
 WORKDIR /usr/src/app/
 
 # copying project files to container
