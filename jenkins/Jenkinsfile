@@ -6,7 +6,7 @@ pipeline{
         stage("Pre-build actions"){
             steps{
                 echo "Stopping and removing previous containers and images..."
-                sh "docker-compose down"
+                // sh "docker-compose down"
                 sh "docker rmi flask-app-img"
                 echo "OK"
             }
