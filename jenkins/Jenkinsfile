@@ -1,0 +1,30 @@
+pipeline{
+    agent{
+        label "master"
+    }
+    stages{
+        stage("Pre-build actions"){
+            steps{
+                echo "Stopping and removing previous containers and images..."
+                dir('/usr/src/app/'){
+                    sh "docker-compose down"
+                    sh "docker rmi flask-app-img"
+                }
+                echo "OK"
+            }
+        }
+        stage("Building image"){
+            steps{
+                echo "Building app image..."
+                sh "docker-compose build"
+                echo "OK"
+            }
+        }
+        stage("Running app"){
+            steps{
+                echo "Running container..."
+                sh "docker-compose up -d"
+            }
+        }
+    }
+}
