@@ -1,6 +1,6 @@
 pipeline{
     agent{
-        label "master"
+        label "node"
     }
     stages{
         stage("Pre-build actions"){
