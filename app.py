@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import random
 app = Flask(__name__)
 
-# list of cat images
+# list of meme gifs
 images = [
     "https://24.media.tumblr.com/d8a3a689658dd4d032a65bd77c34be93/tumblr_mj29fhaCLH1r40mo0o1_400.gif",
     "https://66.media.tumblr.com/fde64bab9db033beb92772be02c2c50c/tumblr_pjzpke2kKc1x9u51to1_400.gif",
