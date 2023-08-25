@@ -1,0 +1,18 @@
+body {
+    background: black;
+    color: white;
+}
+div.container {
+    max-width: 500px;
+    margin: 100px auto;
+    border: 20px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+img {
+    border-radius: 10px;
+}
+h4 {
+    text-transform: uppercase;
+}
